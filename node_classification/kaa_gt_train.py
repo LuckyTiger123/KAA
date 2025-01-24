@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import torch_geometric.transforms as T
 from torch_geometric.datasets import Planetoid, Amazon
 
-from model.GT_KAN.modules import laplacian_positional_encoding, laplacian_positional_encoding_fast
+from model.GT_KAN.laplace_pos_enc import laplacian_positional_encoding, laplacian_positional_encoding_fast
 from model.GT_KAN.graph_transformer_net import GraphTransformerNet
 
 parser = argparse.ArgumentParser()

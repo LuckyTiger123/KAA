@@ -1,16 +1,12 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
-import dgl
-import numpy as np
 
 """
     Graph Transformer
     
 """
 from model.SAN_KAN.graph_transformer_layer import GraphTransformerLayer
-from model.SAN_KAN.mlp_readout_layer import MLPReadout
+from model.modules.mlp_readout_layer import MLPReadout
 
 class SAN(nn.Module):
 

@@ -6,7 +6,7 @@ import dgl
 import dgl.function as fn
 import numpy as np
 
-from model.SAN_KAN.efficient_kan import make_kans
+from model.modules.efficient_kan import make_kans
 
 """
     Graph Transformer Layer

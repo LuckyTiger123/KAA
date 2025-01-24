@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import torch_geometric.transforms as T
 from torch_geometric.datasets import Planetoid, Amazon
 
-from model.SAN_KAN.module import laplace_decomp
+from model.SAN_KAN.laplace_decomp import laplace_decomp
 from model.SAN_KAN.SAN_nodeLPE import SAN_NodeLPE
 
 parser = argparse.ArgumentParser()

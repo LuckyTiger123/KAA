@@ -3,11 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init as init
 
-import dgl
 import dgl.function as fn
 import numpy as np
 
-from model.GT_KAN.efficient_kan import make_kans
+from model.modules.efficient_kan import make_kans
 
 """
     Graph Transformer Layer

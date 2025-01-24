@@ -1,4 +1,3 @@
-import dgl
 from scipy import sparse as sp
 from scipy.sparse.linalg import eigsh
 import numpy as np

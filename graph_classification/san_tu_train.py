@@ -15,7 +15,7 @@ from torch_geometric.logging import log
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from model.SAN_KAN.SAN_nodeLPE import SAN_NodeLPE
-from model.SAN_KAN.module import laplace_decomp
+from model.SAN_KAN.laplace_decomp import laplace_decomp
 
 parser = argparse.ArgumentParser()
 # Dataset: MUTAG, ENZYMES, PROTEINS

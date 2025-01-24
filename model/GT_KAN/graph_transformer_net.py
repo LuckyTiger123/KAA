@@ -1,16 +1,12 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
-import dgl
 
 """
     Graph Transformer
     
 """
 from model.GT_KAN.graph_transformer_layer import GraphTransformerLayer
-from model.GT_KAN.mlp_readout_layer import MLPReadout
-from torch_geometric.nn import MLP, global_add_pool
+from model.modules.mlp_readout_layer import MLPReadout
 
 class GraphTransformerNet(nn.Module):
 

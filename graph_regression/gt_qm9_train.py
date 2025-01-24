@@ -14,7 +14,7 @@ from torch_geometric.loader import DataLoader
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from model.GT_KAN.graph_transformer_net import GraphTransformerNet
-from model.GT_KAN.modules import laplacian_positional_encoding
+from model.GT_KAN.laplace_pos_enc import laplacian_positional_encoding
 
 
 def pyg_to_dgl(data):

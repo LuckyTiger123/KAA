@@ -5,7 +5,10 @@ import torch
 import torch.nn.functional as F
 
 def laplace_decomp(g, max_freqs):
-
+    """
+    Computes the Laplacian decomposition of a graph and extracts the eigenvalues and eigenvectors
+    up to a maximum desired number of frequencies.
+    """
 
     # Laplacian
     n = g.number_of_nodes()

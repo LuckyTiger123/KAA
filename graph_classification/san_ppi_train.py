@@ -12,7 +12,7 @@ from torch_geometric.loader import DataLoader
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from model.SAN_KAN.SAN_nodeLPE import SAN_NodeLPE
-from model.SAN_KAN.module import laplace_decomp
+from model.SAN_KAN.laplace_decomp import laplace_decomp
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='PPI')

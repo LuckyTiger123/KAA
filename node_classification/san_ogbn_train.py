@@ -9,7 +9,7 @@ import torch_geometric.transforms as T
 from ogb.nodeproppred import PygNodePropPredDataset, Evaluator
 
 
-from model.SAN_KAN.module import laplace_decomp
+from model.SAN_KAN.laplace_decomp import laplace_decomp
 from model.SAN_KAN.SAN_nodeLPE import SAN_NodeLPE
 
 torch.backends.cuda.enable_mem_efficient_sdp(False)
