@@ -162,9 +162,7 @@ class KANLinear(torch.nn.Module):
         )
         output = base_output + spline_output
         
-        # print(f"original_shape: {output.shape}")
         output = output.reshape(*original_shape[:-1], self.out_features)
-        # print(f"after_shape: {output.shape}")
 
         return output
 
