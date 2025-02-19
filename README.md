@@ -1,7 +1,7 @@
 # KAA
 This is a Pytorch code Implementation of the paper [*KAA: Kolmogorov-Arnold Attention for Enhancing Attentive Graph Neural Networks*](https://arxiv.org/abs/2501.13456), which is accepted by the ICLR 2025. Specifically, we apply KAN to the scoring functions of attentive GNNs and achieve better theoretical expressiveness and experimental results.
 
-![image-20250219152005843](/Users/luckytiger/KAA/PIC/headline.png)
+![image-20250219152005843](./PIC/headline.png)
 
 ### Installation
 
@@ -27,13 +27,13 @@ In our experiments, we introduced five backbone models: GAT, GLCN, CFGAT, GT, an
 
 The performance of each model on node-level tasks is shown in the table below.
 
-![image-20250219170335105](/Users/luckytiger/KAA/PIC/node_level.png)
+![image-20250219170335105](./PIC/node_level.png)
 
 #### Graph-Level Tasks
 
 The performance of each model on graph-level tasks is shown in the table below.
 
-![image-20250219152931229](/Users/luckytiger/KAA/PIC/graph_level.png)
+![image-20250219152931229](./PIC/graph_level.png)
 
 ### Reproducibility
 
