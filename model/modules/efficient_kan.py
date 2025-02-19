@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import math
 
-
+# Implementation of efficient-KAN from https://github.com/Blealtan/efficient-kan.
 class KANLinear(torch.nn.Module):
     def __init__(
         self,

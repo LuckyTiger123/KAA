@@ -31,7 +31,7 @@ if typing.TYPE_CHECKING:
 else:
     from torch.jit import _overload_method as overload
 
-from kan import make_kans
+from model.kan import make_kans
 
 
 class KAAGATConv(MessagePassing):
