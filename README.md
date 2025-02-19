@@ -19,7 +19,7 @@ pandas 2.2.2
 
 In our experiments, we introduced five backbone models: GAT, GLCN, CFGAT, GT, and SAN. Their original scoring functions and the KAA version of the scoring functions are shown in the table below.
 
-<img src="/Users/luckytiger/KAA/PIC/scoring_f.png" alt="image-20250219151451467" style="zoom:50%;" />
+<img src="./PIC/scoring_f.png" alt="image-20250219151451467" style="zoom:50%;" />
 
 ### Experimental Results
 
