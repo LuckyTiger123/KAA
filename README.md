@@ -21,6 +21,41 @@ In our experiments, we introduced five backbone models: GAT, GLCN, CFGAT, GT, an
 
 ![image-20250220161524572](./PIC/scoring_f.png)
 
+### Usage
+
+The training files for each dataset and task generally follow a unified format. Taking the node classification task on Cora as an example, locate the `train.py` for the corresponding model under the `node_classification/`. It has the following optional parameters:
+
+```shell
+usage: train.py [-h] [--model MODEL] [--hidden_dim HIDDEN_DIM] [--heads HEADS] [--device_num DEVICE_NUM] [--epoch_num EPOCH_NUM] [--lr LR] [--drop_rate DROP_RATE] [--kan_layers KAN_LAYERS] [--grid_size GRID_SIZE] [--spline_order SPLINE_ORDER] [--seed SEED] [--dataset DATASET] [--train_round TRAIN_ROUND] [--file_id FILE_ID]
+
+PyTorch implementation of downstream adaptation.
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         the used model type
+  --hidden_dim HIDDEN_DIM
+                        the hidden dimension
+  --heads HEADS         the head number
+  --device_num DEVICE_NUM
+                        the device number
+  --epoch_num EPOCH_NUM
+                        the epoch number
+  --lr LR               the learning rate
+  --drop_rate DROP_RATE
+                        the dropping rate
+  --kan_layers KAN_LAYERS
+                        the kan layer number
+  --grid_size GRID_SIZE
+                        the grid size of kan
+  --spline_order SPLINE_ORDER
+                        the spline order of kan
+  --seed SEED           the random seed
+  --dataset DATASET     the test dataset
+  --train_round TRAIN_ROUND
+                        the train round number
+  --file_id FILE_ID     the file id
+```
+
 ### Experimental Results
 
 #### Node-Level Tasks
