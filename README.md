@@ -56,6 +56,8 @@ options:
   --file_id FILE_ID     the file id
 ```
 
+You can conveniently use the methods described later under **Reproducibility** to obtain the results from the paper.
+
 ### Experimental Results
 
 #### Node-Level Tasks
