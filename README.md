@@ -17,15 +17,9 @@ pandas 2.2.2
 
 ### Backbone Models
 
-In our experiments, we introduced five backbone models: GAT, GLCN, CFGAT, GT, and SAN. Their original scoring functions and the KAA version of the scoring functions are shown in the table below.\text{LeakyReLU}(\cos(\mathbf{W}h_i,\mathbf{W}h_j))
+In our experiments, we introduced five backbone models: GAT, GLCN, CFGAT, GT, and SAN. Their original scoring functions and the KAA version of the scoring functions are shown in the table below.
 
-|       | Original Version                                             | KAA Version                                                  |
-| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| GAT   | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\text{LeakyReLU}(a^{\top}\cdot[\mathbf{W}h_i \Vert \mathbf{W}h_j])" /><br/></p> | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\text{KAN}([h_i \Vert h_j])" /><br/></p> |
-| GLCN  | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\text{ReLU}(a^{\top}\cdot \|h_i-h_j\|)" /><br/></p> | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\text{KAN}(\|h_i-h_j\|)" /><br/></p> |
-| CFGAT | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\text{LeakyReLU}(\cos(\mathbf{W}h_i,\mathbf{W}h_j))" /><br/></p> | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\cos(\text{KAN}(h_i),\text{KAN}(h_j))" /><br/></p> |
-| GT    | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{\sqrt{d}}(\mathbf{W}_q h_i)^{\top}\cdot \mathbf{W}_k h_j" /><br/></p> | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{\sqrt{d}}\text{KAN}(h_{i})^{\top}\cdot h_{j}" /><br/></p> |
-| SAN   | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{\sqrt{d}(\gamma+1)}(\mathbf{W}_q h_i)^{\top}\cdot \mathbf{W}_k h_j" /><br/></p> | <p align="center"><br/>  <img src="https://latex.codecogs.com/svg.latex?\frac{1}{\sqrt{d}(\gamma+1)}\text{KAN}(h_{i})^{\top}\cdot h_{j}" /><br/></p> |
+![image-20250220161524572](./PIC/scoring_f.png)
 
 ### Experimental Results
 
